@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "duplicate store name" : "AkashCLI/squad2",
-  "main store link" : "https://techm-squad2.myshopify.com/",
-  "store password" : "squad2"
+  "store name" : "techm-squad2",
+  "password" : "squad2",
+  "store link" : "https://techm-squad2.myshopify.com/"
 }
