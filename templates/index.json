@@ -73,7 +73,7 @@
         "slide_ndJdtF"
       ],
       "custom_css": [
-        "h2 {color: #F2B835;}"
+        "* {color: #f2b835; border: 0px solid #f2b835;}"
       ],
       "settings": {
         "layout": "full_bleed",
