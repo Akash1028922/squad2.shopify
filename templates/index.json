@@ -1,12 +1,76 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
+    "slideshow_PaxH4G": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_mtNNY4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rooftopper-looking-down.jpg",
+            "heading": "Find the best Sneakers",
+            "heading_size": "h1",
+            "subheading": "Best Sneakers in the industry",
+            "button_label": "Sneak In",
+            "link": "shopify:\/\/collections\/frontpage",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_ndJdtF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6915837.jpg",
+            "heading": "Find the best Sneakers",
+            "heading_size": "h1",
+            "subheading": "Best Sneakers in the Industry",
+            "button_label": "Sneak in",
+            "link": "shopify:\/\/collections\/frontpage",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_mtNNY4",
+        "slide_ndJdtF"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Find the best Sneakers",
+            "heading": "",
             "heading_size": "h0"
           }
         },
@@ -286,6 +350,7 @@
     }
   },
   "order": [
+    "slideshow_PaxH4G",
     "image_banner",
     "multicolumn_aPdG7n",
     "featured_collection",
