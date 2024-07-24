@@ -198,13 +198,13 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#ffffff",
-          "background_gradient": "",
-          "text": "#f2b835",
+          "background": "#f3f3f3",
+          "background_gradient": "radial-gradient(rgba(247, 248, 253, 0.63), rgba(215, 204, 250, 1) 100%, rgba(247, 197, 204, 1) 100%)",
+          "text": "#121212",
           "button": "#ffffff",
           "button_label": "#ffffff",
-          "secondary_button_label": "#f2b835",
-          "shadow": "#121212"
+          "secondary_button_label": "#121212",
+          "shadow": "#242833"
         }
       },
       "scheme-2": {
