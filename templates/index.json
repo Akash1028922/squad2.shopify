@@ -349,7 +349,7 @@
         "title": "New Arrivals",
         "heading_size": "h1",
         "description": "<p>Find the latest trends in the industry<\/p>",
-        "show_description": false,
+        "show_description": true,
         "description_style": "body",
         "collection": "shop-for-occassions",
         "products_to_show": 4,
