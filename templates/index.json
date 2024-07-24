@@ -26,7 +26,7 @@
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-2",
+            "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
         },
@@ -73,7 +73,7 @@
         "slide_ndJdtF"
       ],
       "custom_css": [
-        "h2 {color: #f2b835;}"
+        "* {color: #f2b835; border: 0px solid #f2b835;}"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -364,7 +364,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
+        "quick_add": "bulk",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
