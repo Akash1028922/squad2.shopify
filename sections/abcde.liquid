@@ -1,2 +1,51 @@
 <div>hello world</div>
 <p>my name ia ankit kumar</p>
+
+
+<div><h1>this is section</h1></div>
+<div>Welcome ot my shopify</div>
+{% if section.settings.enableid %}
+<div style="text-align:{{ section.settings.text-position }}">{{ section.settings.textid }}</div>
+  {% endif %}
+{%  schema %}
+{
+  "name":"Section-342",
+  "settings":[
+    {
+      "type":"text",
+      "id":"textid",
+      "label":"enter text -->",
+      "default":"Shopify.com"
+    },
+    {
+      "type":"checkbox",
+      "id":"enableid",
+      "label":"enable your text",
+      "default":true
+    },
+    {
+      "type":"select",
+      "id":"text-position",
+      "label":"position your text",
+      "options":[
+        {
+          "value":"left",
+          "label":"left"
+        },
+        {
+          "value":"right", 
+          "label":"right"
+        },
+        {
+          "value":"center", 
+          "label":"center"}
+      ],
+      "default":"center"
+    }
+  ],
+  "presets": [{
+    "name":"My custom text",
+    "category": "Text"
+  }]
+}
+{% endschema %}
