@@ -30,24 +30,6 @@
             "text_alignment_mobile": "center"
           }
         },
-        "slide_ndJdtF": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/6915837.jpg",
-            "heading": "Find the best Sneakers",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "Sneak in",
-            "link": "shopify:\/\/collections\/frontpage",
-            "button_style_secondary": true,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        },
         "slide_Ly9UBk": {
           "type": "slide",
           "settings": {
@@ -65,12 +47,30 @@
             "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_ndJdtF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6915837.jpg",
+            "heading": "Find the best Sneakers",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Sneak in",
+            "link": "shopify:\/\/collections\/frontpage",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "slide_mtNNY4",
-        "slide_ndJdtF",
-        "slide_Ly9UBk"
+        "slide_Ly9UBk",
+        "slide_ndJdtF"
       ],
       "settings": {
         "layout": "full_bleed",
