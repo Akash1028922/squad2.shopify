@@ -5,9 +5,6 @@
     justify-content:center;
     align-items:center;
   }
-  a:MapLink{
-    text-decoration:none;
-  }
 </style>
 <div class="store-locator">
    <section id="section2">
@@ -20,7 +17,7 @@
 <div class="store-item-para">
 <h2>{{ block.settings.store_title }}</h2>
 <h3> Address:  {{ block.settings.store_address }}</h3>
-<div> <a href="{{ block.settings.store_website }}" target=" blank" text-decoration= "none">Map Link</a> </div>
+<div> <button><a href="{{ block.settings.store_website }}" target=" blank" text-decoration= "none">Map Link</a></button> </div>
 </div>
 </div>
         </div>
