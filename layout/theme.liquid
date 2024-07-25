@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
+<<<<<<< HEAD
+=======
+    {{ 'flickity.css' | asset_url | stylesheet_tag }}
+    {{ 'flickity.js' | asset_url | script_tag }}
+>>>>>>> ff2634288f29b7bbc75615e65f852248f99cd7af
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">

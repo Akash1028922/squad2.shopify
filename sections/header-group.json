@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 * ------------------------------------------------------------
 * IMPORTANT: The contents of this file are auto-generated.
@@ -7,6 +8,8 @@
 * made to this file may be overwritten.
 * ------------------------------------------------------------
 */
+=======
+>>>>>>> ff2634288f29b7bbc75615e65f852248f99cd7af
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -17,7 +20,11 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
+<<<<<<< HEAD
             "text": "Welcome to Akash's Duplicate squad 2 store",
+=======
+            "text": "Get 20% off on orders above Rs. 9,999",
+>>>>>>> ff2634288f29b7bbc75615e65f852248f99cd7af
             "link": ""
           }
         }

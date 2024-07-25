@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+=======
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+>>>>>>> ff2634288f29b7bbc75615e65f852248f99cd7af
 {
   "sections": {
     "main": {
@@ -23,8 +35,12 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
+<<<<<<< HEAD
             "picker_type": "button",
             "swatch_shape": "circle"
+=======
+            "picker_type": "button"
+>>>>>>> ff2634288f29b7bbc75615e65f852248f99cd7af
           }
         },
         "quantity_selector": {
@@ -41,11 +57,19 @@
         },
         "description": {
           "type": "description",
+<<<<<<< HEAD
+=======
+          "disabled": true,
+>>>>>>> ff2634288f29b7bbc75615e65f852248f99cd7af
           "settings": {
           }
         },
         "share": {
           "type": "share",
+<<<<<<< HEAD
+=======
+          "disabled": true,
+>>>>>>> ff2634288f29b7bbc75615e65f852248f99cd7af
           "settings": {
             "share_label": "Share"
           }
@@ -61,6 +85,7 @@
         "description",
         "share"
       ],
+<<<<<<< HEAD
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
@@ -68,11 +93,26 @@
         "constrain_to_viewport": true,
         "media_fit": "cover",
         "gallery_layout": "thumbnail_slider",
+=======
+      "custom_css": [
+        "button{color:black;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+>>>>>>> ff2634288f29b7bbc75615e65f852248f99cd7af
         "media_position": "left",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
+<<<<<<< HEAD
         "enable_video_looping": false,
+=======
+        "enable_video_looping": true,
+>>>>>>> ff2634288f29b7bbc75615e65f852248f99cd7af
         "padding_top": 36,
         "padding_bottom": 12
       }
