@@ -257,6 +257,7 @@
                     </span>
                   </label>
                   <div class="price-per-item__container">
+<h1>quantity</h1>
                     <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}">
                       <button class="quantity__button" name="minus" type="button">
                         <span class="visually-hidden">
@@ -286,7 +287,6 @@
                         </span>
                         {% render 'icon-plus' %}
                       </button>
-                      <h1>Hello welcome to the image-slider change end section</h1>
                     </quantity-input>
                     {%- liquid
                       assign volume_pricing_array = product.selected_or_first_available_variant.quantity_price_breaks | sort: 'quantity' | reverse
