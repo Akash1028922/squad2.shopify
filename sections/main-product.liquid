@@ -105,6 +105,7 @@
                     </h2>
                   </a>
                 </div>
+              <h1>color </h1>
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
@@ -114,13 +115,11 @@
                     price_class: 'price--large'
                   -%}
                 </div>
-              <h1>color </h1>
                 {%- if product.quantity_price_breaks_configured? -%}
                   <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
                     <span>{{ 'products.product.volume_pricing.note' | t }}</span>
                   </div>
                 {%- endif -%}
-              <h1>color 2</h1>
                 {%- if cart.taxes_included or cart.duties_included or shop.shipping_policy.body != blank -%}
                   <div class="product__tax caption rte">
                     {%- if cart.duties_included and cart.taxes_included -%}
@@ -135,7 +134,6 @@
                     {%- endif -%}
                   </div>
                 {%- endif -%}
-              <h1>color 3</h1>
                 <div {{ block.shopify_attributes }}>
                   {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
                   {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
@@ -143,7 +141,6 @@
                     {{ form | payment_terms }}
                   {%- endform -%}
                 </div>
-              <h1>color 4</h1>
               {%- when 'inventory' -%}
                 <p
                   class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
