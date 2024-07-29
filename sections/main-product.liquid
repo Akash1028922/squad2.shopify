@@ -213,10 +213,10 @@
                   <span class="visually-hidden">{{ 'products.product.sku' | t }}:</span>
                   {{- product.selected_or_first_available_variant.sku -}}
                 </p>
+                             <h1>size</h1>
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}
               {%- when 'collapsible_tab' -%}
-                             <h1>size</h1>
                 <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                   <details id="Details-{{ block.id }}-{{ section.id }}">
                     <summary>
