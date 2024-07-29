@@ -135,7 +135,6 @@
                   </div>
                 {%- endif -%}
                 <div {{ block.shopify_attributes }}>
-                  <h1>Hello welcome to this secion 2</h1>
                   {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
                   {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
                     <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
@@ -196,6 +195,7 @@
                       {%- endif -%}
                     {%- endif -%}
                   {%- endif -%}
+                            <h1>Hello welcome to this secion 2</h1>
                 </p>
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
