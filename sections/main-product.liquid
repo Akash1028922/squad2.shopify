@@ -108,6 +108,7 @@
                 </div>
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+                   <h1>Hello welcome to this secion 2</h1>
                   {%- render 'price',
                     product: product,
                     use_variant: true,
@@ -187,7 +188,6 @@
                         </svg>
                         {{- 'products.product.inventory_out_of_stock_continue_selling' | t -}}
                       {%- else -%}
-                             <h1>Hello welcome to this secion 2</h1>
                         <svg width="15" height="15" aria-hidden="true">
                           <circle cx="7.5" cy="7.5" r="7.5" fill="rgb(200,200,200, 0.3)"/>
                           <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(200,200,200)"/>
