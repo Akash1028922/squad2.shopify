@@ -113,7 +113,7 @@
                     show_badges: true,
                     price_class: 'price--large'
                   -%}
-<h1>color changing section</h1>
+<h1>color </h1>
                 </div>
                 {%- if product.quantity_price_breaks_configured? -%}
                   <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
@@ -200,7 +200,7 @@
                 {%- if product.description != blank -%}
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                     {{ product.description }}
-<h1>Hello welcome to description section</h1>
+<h1>description</h1>
                   </div>
                 {%- endif -%}
               {%- when 'sku' -%}
@@ -213,7 +213,6 @@
                   <span class="visually-hidden">{{ 'products.product.sku' | t }}:</span>
                   {{- product.selected_or_first_available_variant.sku -}}
                 </p>
-                             <h1>size</h1>
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}
               {%- when 'collapsible_tab' -%}
