@@ -1,8 +1,17 @@
 <section
   id="MainProduct-{{ section.id }}"
-  class="page-width section-{{ section.id }}-padding "
+  <!-- class="page-width section-{{ section.id }}-padding " -->
+  <!-- change -->
+class="page-width section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
+  <!-- changed -->
   data-section="{{ section.id }}"
-    
+  <!-- change -->
+  data-update-url="true"
+  data-url="{{ product.url }}"
+  {% if section.settings.image_zoom == 'hover' %}
+    data-zoom-on-hover
+  {% endif %}
+    <!-- changed -->
 >
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
