@@ -78,26 +78,29 @@
         {% render 'product-media-gallery', variant_images: variant_images %}
       </div>
       
-            <!-- Custom Product Slider HTML Start -->
-    <div class="product-slider">
-      <div class="slides">
-        {% for variant in product.variants %}
-          <div class="slide" data-color="{{ variant.option1 | handle }}">
-            <img src="{{ variant.featured_image.src }}" alt="{{ variant.title }}">
-          </div>
+<!-- Custom Product Slider HTML Start -->
+<div class="product-slider">
+  <div class="slides">
+    {% for variant in product.variants %}
+      {% if variant.featured_image %}
+        <div class="slide" data-color="{{ variant.option1 | handle }}">
+          <img src="{{ variant.featured_image.src }}" alt="{{ variant.option1 | escape }}">
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="color-options">
+    {% for option in product.options_with_values %}
+      {% if option.name == "Color" %}
+        {% for value in option.values %}
+          <button class="color-option" data-color="{{ value | handle }}">{{ value }}</button>
         {% endfor %}
-      </div>
-      <div class="color-options">
-        {% for option in product.options_with_values %}
-          {% if option.name == "Color" %}
-            {% for value in option.values %}
-              <button class="color-option" data-color="{{ value | handle }}">{{ value }}</button>
-            {% endfor %}
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
-    <!-- Custom Product Slider HTML End -->
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+<!-- Custom Product Slider HTML End -->
+
       
       <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <section
