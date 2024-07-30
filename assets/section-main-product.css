@@ -1476,3 +1476,33 @@ a.product__text {
     border: none;
   }
 }
+
+
+/* custom css for image-slider */
+.product-slider {
+  position: relative;
+  margin-top: 20px;
+}
+.slides {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+.slide {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+.color-options {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.color-option {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* custom css ends */
