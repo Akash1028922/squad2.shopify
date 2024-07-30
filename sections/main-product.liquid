@@ -75,12 +75,32 @@
     <div class="grid__item product__media-wrapper
       {% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       {% comment %} {% render 'product-media-gallery', variant_images: variant_images %} {% endcomment %}
-      
- <!-- change is here -->
-      
+
+ <!-- carousel code -->
      {% if product.images != null %}
         <div class="carousel product__image-slider" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0">
-          
+          {%- for media in product.media -%}
+            <div class="carousel-cell">
+              {% if media.media_type == "video" %}
+                {{ media | media_tag: image_size: "720x", autoplay: true, loop: loop, controls: true, preload: "none", autoplay: true, height: "100%", width: "100%" }}
+              {% else %}
+                <img src="{{ media | img_url: '1440x' }} 1440w,
+                {{ media | img_url: '1080x' }} 1080w,
+                {{ media | img_url: '720x' }} 767w,
+                {{ media | img_url: '480x' }} 480w"
+                data-flickity-lazyload-srcset="
+                {{ media | img_url: '1440x' }} 1440w,
+                {{ media | img_url: '1080x' }} 1080w,
+                {{ media | img_url: '720x' }} 767w,
+                {{ media | img_url: '480x' }} 480w"
+                sizes="(min-width: 480px) 1440px, 1080px, 767px, 480px"
+                data-flickity-lazyload-src="{{ media | img_url: 'master' }}"
+                alt="{{ media.alt | escape }}"
+                border="0"
+                data-media-id="{{ media.id }}" />
+              {% endif %}
+            </div>
+          {%- endfor -%}
       <!--- Coded by websensepro.com --->
         </div>
         {% if product.images.size > 1 %}
