@@ -45,3 +45,24 @@ document.addEventListener('shopify:section:deselect', () => hideProductModal());
 document.addEventListener('shopify:inspector:activate', () => hideProductModal());
 
 document.addEventListener('shopify:inspector:deactivate', () => hideProductModal());
+
+
+// custom image slider change
+document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.slide');
+  const colorOptions = document.querySelectorAll('.color-option');
+
+  colorOptions.forEach(option => {
+    option.addEventListener('click', function() {
+      const color = this.getAttribute('data-color');
+      slides.forEach(slide => {
+        if (slide.getAttribute('data-color') === color) {
+          slide.style.transform = 'translateX(0%)';
+        } else {
+          slide.style.transform = 'translateX(-100%)';
+        }
+      });
+    });
+  });
+});
+// custom js ends
