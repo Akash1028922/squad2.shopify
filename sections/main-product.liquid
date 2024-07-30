@@ -79,7 +79,7 @@
     {% for variant in product.variants %}
       {% if variant.featured_image %}
         <div class="slide" data-color="{{ variant.option1 | handle }}">
-          <img src="{{ variant.featured_image.src }}" alt="{{ variant.option1 | escape }}">
+          <img src="{{ variant.image }}" alt="{{ variant.option1 | escape }}">
         </div>
       {% endif %}
     {% endfor %}
