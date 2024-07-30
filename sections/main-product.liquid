@@ -15,17 +15,14 @@
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
-  <!-- change made start-->
     {% unless product.has_only_default_variant %}
     {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
     {{ 'component-swatch-input.css' | asset_url | stylesheet_tag }}
     {{ 'component-swatch.css' | asset_url | stylesheet_tag }}
   {% endunless %}
-  <!-- change made end -->
   {%- if product.quantity_price_breaks_configured? -%}
     {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
   {%- endif -%}
-
   {%- style -%}
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -79,8 +76,6 @@
     <div class="grid__item product__media-wrapper
       {% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       {% comment %} {% render 'product-media-gallery', variant_images: variant_images %} {% endcomment %}
-
- <!-- carousel code -->
      {% if product.images != null %}
         <div class="carousel product__image-slider" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0">
           {%- for media in product.media -%}
@@ -105,8 +100,6 @@
               {% endif %}
             </div>
           {%- endfor -%}
-
-<!--- below carousel code --->
         </div>
         {% if product.images.size > 1 %}
           <div class="carousel product__image-thumbnail">
@@ -134,8 +127,6 @@
         {{ 'product-1' | placeholder_svg_tag }}
       {% endif %}
 </div>  
-<!-- change is till here  -->
-    
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <product-info
         id="ProductInfo-{{ section.id }}"
