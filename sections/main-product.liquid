@@ -76,7 +76,7 @@
       
       <!-- change is here -->
       {% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
-      {% render 'product-media-gallery', variant_images: variant_images %} 
+      {% comment %} {% render 'product-media-gallery', variant_images: variant_images %} {% endcomment %}
      {% if product.images != null %}
 <div class="carousel product__image-slider" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0">
 {%- for media in product.media -%}
