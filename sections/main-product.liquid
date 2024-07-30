@@ -83,7 +83,8 @@
           {%- for media in product.media -%}
             <div class="carousel-cell">
               {% if media.media_type == "video" %}
-                
+                {{ media | media_tag: image_size: "720x", autoplay: true, loop: loop, controls: true, preload: "none", autoplay: true, height: "100%", width: "100%" }}
+              {% else %}
                 <img src="{{ media | img_url: '1440x' }} 1440w,
                 {{ media | img_url: '1080x' }} 1080w,
                 {{ media | img_url: '720x' }} 767w,
